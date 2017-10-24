@@ -1,0 +1,23 @@
+allprojects {
+    apply plugin: "eclipse"
+    apply plugin: "idea"
+    apply plugin: "groovy"
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        maven { url 'http://repo.spring.io/milestone' }
+        jcenter()
+    }
+
+    sourceCompatibility = 1.8
+    group "org.foreignexchange"
+
+    dependencies {
+        compile "org.codehaus.groovy:groovy-all:2.4.11"
+        compile "ch.qos.logback:logback-core:1.2.3"
+        compile "ch.qos.logback:logback-classic:1.2.3"
+
+        testCompile "junit:junit:4.12"
+    }
+}
