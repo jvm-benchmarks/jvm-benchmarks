@@ -1,4 +1,10 @@
-allprojects {
+apply plugin: "java"
+
+subprojects { Project subproject ->
+    plugins {
+        id "me.champeau.gradle.jmh" version "0.4.3"
+    }
+
     apply plugin: "eclipse"
     apply plugin: "idea"
     apply plugin: "groovy"
@@ -11,7 +17,7 @@ allprojects {
     }
 
     sourceCompatibility = 1.8
-    group "org.foreignexchange"
+    group "com.jvm.benchmark"
 
     dependencies {
         compile "org.codehaus.groovy:groovy-all:2.4.11"
