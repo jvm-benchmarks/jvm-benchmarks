@@ -1,12 +1,5 @@
-plugins {
-    id "me.champeau.gradle.jmh" version "0.4.3"
-}
-
-apply plugin: "scala"
-
 version project.VERSION
 
 dependencies {
-    compile project(":lib")
-    compile "org.scala-lang:scala-library:2.12.3"
+    compile rootProject
 }

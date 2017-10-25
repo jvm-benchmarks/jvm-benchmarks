@@ -1,0 +1,5 @@
+rootProject.name = "jvm-benchmark"
+
+include "collections"
+include "object-creation"
+include "string"

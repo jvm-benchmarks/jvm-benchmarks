@@ -1,12 +1,14 @@
-plugins {
-    id "me.champeau.gradle.jmh" version "0.4.3"
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath "me.champeau.gradle:jmh-gradle-plugin:0.4.4"
+    }
 }
 
-apply plugin: "scala"
+apply plugin: "me.champeau.gradle.jmh"
 
 version project.VERSION
-
-dependencies {
-    compile project(":lib")
-    compile "org.scala-lang:scala-library:2.12.3"
-}
