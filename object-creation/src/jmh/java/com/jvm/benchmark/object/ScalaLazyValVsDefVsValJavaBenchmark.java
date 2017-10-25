@@ -1,9 +1,9 @@
 package com.jvm.benchmark.object;
 
-import com.jvm.benchmark.time.NanoClock;
 import com.jvm.benchmark.scala.CaseClassDefProperties;
-import org.foreignexchange.scala.CaseClassLazyValProperties;
-import org.foreignexchange.scala.CaseClassValProperties;
+import com.jvm.benchmark.scala.CaseClassLazyValProperties;
+import com.jvm.benchmark.scala.CaseClassValProperties;
+import com.jvm.benchmark.time.NanoClock;
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.BenchmarkMode;
 import org.openjdk.jmh.annotations.Fork;

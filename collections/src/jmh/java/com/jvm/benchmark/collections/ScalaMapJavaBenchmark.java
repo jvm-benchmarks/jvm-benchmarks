@@ -2,7 +2,6 @@ package com.jvm.benchmark.collections;
 
 
 import com.jvm.benchmark.time.NanoClock;
-import com.jvm.benchmark.collections.ScalaMap;
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.BenchmarkMode;
 import org.openjdk.jmh.annotations.Fork;

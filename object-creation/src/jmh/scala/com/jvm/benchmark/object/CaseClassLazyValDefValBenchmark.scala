@@ -3,8 +3,9 @@ package com.jvm.benchmark.`object`
 import java.time.{Instant, ZonedDateTime}
 import java.util.concurrent.TimeUnit.NANOSECONDS
 
-import com.jvm.benchmark.scala.CaseClassDefProperties
+import com.jvm.benchmark.scala.{CaseClassDefProperties, CaseClassLazyValProperties, CaseClassValProperties}
 import com.jvm.benchmark.time.NanoClock
+import org.openjdk.jmh.annotations.{Benchmark, BenchmarkMode, Fork, Measurement, Mode, OutputTimeUnit, Scope, Setup, State, Warmup}
 
 @State(Scope.Thread)
 @BenchmarkMode(Array(Mode.AverageTime))

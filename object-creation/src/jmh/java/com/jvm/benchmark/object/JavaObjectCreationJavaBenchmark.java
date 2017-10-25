@@ -1,7 +1,7 @@
 package com.jvm.benchmark.object;
 
+import com.jvm.benchmark.java.JavaTestObject;
 import com.jvm.benchmark.time.NanoClock;
-import org.foreignexchange.java.JavaTestObject;
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.BenchmarkMode;
 import org.openjdk.jmh.annotations.Fork;

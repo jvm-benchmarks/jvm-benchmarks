@@ -1,4 +1,4 @@
-package org.foreignexchange.java;
+package com.jvm.benchmark.java;
 
 import java.time.Instant;
 import java.time.ZonedDateTime;

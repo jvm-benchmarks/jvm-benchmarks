@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit.NANOSECONDS
 
 import com.jvm.benchmark.groovy.GroovyTestObject
 import com.jvm.benchmark.time.NanoClock
+import org.openjdk.jmh.annotations.{Benchmark, BenchmarkMode, Fork, Measurement, Mode, OutputTimeUnit, Scope, State, Warmup}
 
 @State(Scope.Thread)
 @BenchmarkMode(Array(Mode.AverageTime))

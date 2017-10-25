@@ -4,7 +4,7 @@ import java.time.Instant
 import java.util.concurrent.TimeUnit.NANOSECONDS
 
 import com.jvm.benchmark.time.NanoClock
-import ScalaMap
+import org.openjdk.jmh.annotations.{Benchmark, BenchmarkMode, Fork, Measurement, Mode, OutputTimeUnit, Scope, Setup, State, Warmup}
 
 import scala.collection.SortedMap
 import scala.collection.immutable.{HashMap, TreeMap}
