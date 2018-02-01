@@ -5,7 +5,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath "me.champeau.gradle:jmh-gradle-plugin:0.4.4"
+        classpath "me.champeau.gradle:jmh-gradle-plugin:0.4.5"
     }
 }
 
@@ -31,11 +31,14 @@ allprojects {
     group "com.jvm.benchmark"
 
     dependencies {
-        compile "org.scala-lang:scala-library:2.12.3"
-        compile "org.codehaus.groovy:groovy-all:2.4.11"
+        compile "org.scala-lang:scala-library:2.12.4"
+        compile "org.codehaus.groovy:groovy-all:2.4.13"
         compile "ch.qos.logback:logback-core:1.2.3"
         compile "ch.qos.logback:logback-classic:1.2.3"
 
         testCompile "junit:junit:4.12"
     }
+
+
 }
+
